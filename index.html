@@ -5,29 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RC Drift - Modélisme Automobile</title>
-    <script>
-        // Fonction pour lire un cookie en fonction de son nom
-        function getCookie(name) {
-            const value = `; ${document.cookie}`;
-            const parts = value.split(`; ${name}=`);
-            if (parts.length === 2) return parts.pop().split(';').shift();
-        }
-
-        // Vérifier la présence du cookie "superadmin"
-        const superadminCookie = getCookie('superadmin');
-        if (superadminCookie && superadminCookie === 'yes') {
-            // L'utilisateur a le cookie "superadmin=yes", autoriser l'accès
-            console.log('Bienvenue, superadmin !');
-        } else {
-            // L'utilisateur n'a pas le cookie "superadmin=yes", rediriger ou refuser l'accès
-            console.log('Accès refusé. Vous n\'avez pas les privilèges nécessaires.');
-            // Exemple de redirection vers une page d'authentification
-            // window.location.href = 'authentification.html';
-        }
-    </script>
     <style>
         /* Votre style CSS existant reste inchangé */
-
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -138,6 +117,12 @@
             <a href="https://hasquin-pierre-3cx-labo-3tel.3cx.be/c" target="_blank">CALL US</a>
         </div>
     </footer>
+
+    <!-- Code snippet pour le plugin de chat en direct -->
+    <!-- Utilisez le code snippet ci-dessous pour fournir des mises à jour en temps réel au plugin de chat en direct sans avoir besoin de copier-coller à chaque fois sur votre site Web lorsque des modifications sont apportées via PBX -->
+    <call-us-selector phonesystem-url="https://hasquin-pierre-3cx-labo-3tel.3cx.be" party="LiveChat832823"></call-us-selector>
+    <!-- Ajoutez le lien vers le fichier JavaScript du plugin de chat en direct -->
+    <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
 
 </body>
 
