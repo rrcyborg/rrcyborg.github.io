@@ -126,8 +126,39 @@
     <!-- Code snippet pour le plugin de chat en direct -->
     <!-- Utilisez le code snippet ci-dessous pour fournir des mises à jour en temps réel au plugin de chat en direct sans avoir besoin de copier-coller à chaque fois sur votre site Web lorsque des modifications sont apportées via PBX -->
     <call-us-selector phonesystem-url="https://hasquin-pierre-3cx-labo-3tel.3cx.be" party="LiveChat832823"></call-us-selector>
-    <!-- Ajoutez le lien vers le fichier JavaScript du plugin de chat en direct -->
-    <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+ 
+	<!--Incase you don't want real time updates to the live chat plugin when options are changed, use the below code snippet. Please note that each time you change the settings you will need to copy and paste the snippet code to your website--> 
+	<!--<call-us 
+	phonesystem-url="https://hasquin-pierre-3cx-labo-3tel.3cx.be" 
+	style="position:fixed;font-size:16px;line-height:17px;z-index: 99999;right: 20px; bottom: 20px;" 
+	id="wp-live-chat-by-3CX" 
+	minimized="true" 
+	animation-style="noanimation" 
+	party="LiveChat832823" 
+	minimized-style="bubbleright" 
+	allow-call="true" 
+	allow-video="false" 
+	allow-soundnotifications="true" 
+	enable-mute="true" 
+	enable-onmobile="true" 
+	offline-enabled="true" 
+	enable="true" 
+	ignore-queueownership="false" 
+	authentication="both" 
+	show-operator-actual-name="true" 
+	aknowledge-received="true" 
+	gdpr-enabled="false" 
+	message-userinfo-format="both" 
+	message-dateformat="both" 
+	lang="browser" 
+	button-icon-type="default" 
+	greeting-visibility="none" 
+	greeting-offline-visibility="none" 
+	chat-delay="2000" 
+	enable-direct-call="true" 
+	enable-ga="false" 
+	></call-us>--> 
+	<script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
 
 </body>
 
